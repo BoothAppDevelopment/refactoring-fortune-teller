@@ -4,7 +4,7 @@ class FortunesController < ApplicationController
     
     @the_sign = params.fetch("the_sign").to_sym
     all_zodiacs = Zodiac.list
-    this_zodiac = all_zodiacs.fetch(the_sign)
+    this_zodiac = all_zodiacs.fetch(@the_sign)
     @horoscope = this_zodiac.fetch(:horoscope)
     
     @array_of_numbers = Array.new
