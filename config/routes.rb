@@ -30,6 +30,10 @@ Rails.application.routes.draw do
     
   get("/roll/1/6", { :controller => "dice", :action => "one_six" })
   get("/roll/2/6", { :controller => "dice", :action => "two_six" })
+  
+# new line for homework
+  get("/roll/:num_dice/:sides_dice", { :controller => "dice", :action => "infinity_and_beyond" })
+
   get("/roll/3/6", { :controller => "dice", :action => "three_six" })
   get("/roll/4/6", { :controller => "dice", :action => "four_six" })
   get("/roll/5/6", { :controller => "dice", :action => "five_six" })
